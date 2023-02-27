@@ -1,5 +1,6 @@
 import React from 'react'
 import { MdCheckBox } from 'react-icons/md'
+import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai'
 import { useState } from 'react'
 import Slider, { Range } from 'rc-slider'
 import 'rc-slider/assets/index.css'
@@ -45,33 +46,55 @@ const CompareLoans = () => {
                   {Currency.format(loanAmount)}
                 </p>
               </div>
-              <div className="flex flex-row justify-center items-center">
-                <div className="h-[32px] w-[32px] border-2 border-green-500  rounded-lg bg-white">
-                  
+              <div className="flex flex-row justify-center items-center pt-2">
+                <div className="border-2 border-green-500 rounded-lg cursor-pointer mr-4">
+                  <AiOutlineMinus
+                    size={24}
+                    style={{
+                      color: 'rgb(34 197 94)',
+                      justifySelf: 'center',
+                      padding: 4
+                    }}
+                  />
                 </div>
-                <Slider
-                  value={loanAmount}
-                  min={1000}
-                  max={200000}
-                  defaultValue={1000}
-                  step={10000}
-                  onChange={(nextValues) => {
-                    console.log('Change:', nextValues)
-                    setLoanAmount(nextValues)
-                  }}
-                  trackStyle={{ backgroundColor: 'rgb(34 197 94)', height: 10 }}
-                  handleStyle={{
-                    borderColor: 'rgb(21 128 61 )',
-                    height: 28,
-                    width: 28,
-                    // marginLeft: -7,
-                    marginTop: -9,
-                    backgroundColor: 'rgb(21 128 61 )'
-                  }}
-                  railStyle={{ height: 10 }}
-                  dotStyle={{ borderColor: 'orange' }}
-                  activeDotStyle={{ borderColor: 'yellow' }}
-                />
+                <div className="w-full h-full flex flex-col">
+                  <Slider
+                    value={loanAmount}
+                    min={1000}
+                    max={200000}
+                    defaultValue={1000}
+                    step={10000}
+                    onChange={(nextValues) => {
+                      console.log('Change:', nextValues)
+                      setLoanAmount(nextValues)
+                    }}
+                    trackStyle={{
+                      backgroundColor: 'rgb(34 197 94)',
+                      height: 10
+                    }}
+                    handleStyle={{
+                      borderColor: 'rgb(21 128 61 )',
+                      height: 28,
+                      width: 28,
+                      // marginLeft: -7,
+                      marginTop: -9,
+                      backgroundColor: 'rgb(21 128 61 )'
+                    }}
+                    railStyle={{ height: 10 }}
+                    dotStyle={{ borderColor: 'orange' }}
+                    activeDotStyle={{ borderColor: 'yellow' }}
+                  />
+                </div>
+                <div className="border-2 border-green-500 rounded-lg cursor-pointer ml-4">
+                  <AiOutlinePlus
+                    size={24}
+                    style={{ color: 'rgb(34 197 94)', padding: 4 }}
+                  />
+                </div>
+              </div>
+              <div className="justify-between flex flex-row mt-2 px-6">
+                <p className="text-[10px]">$1,000</p>
+                <p className="text-[10px]">$200,000</p>
               </div>
             </div>
             <div className="col-span-2">RIGHT</div>
