@@ -6,8 +6,10 @@
   scroll-behavior: smooth;
 }
 
-@layer base {
+ */
+
+ @layer base {
   body {
     @apply bg-[white] text-[black] tracking-wide
   }
-} */
+}
