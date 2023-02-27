@@ -1,7 +1,9 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
-import { Navbar } from './Components/atoms'
-import CompareLoans from './Components/molecules/CompareLoans'
+import { Navbar } from '@/components/atoms'
+import { CompareLoans } from '@/components/molecules'
+// import { Navbar } from './Components/atoms'
+// import CompareLoans from './Components/molecules/CompareLoans'
 
 const inter = Inter({ subsets: ['latin'] })
 
