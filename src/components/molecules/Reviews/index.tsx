@@ -8,7 +8,33 @@ import 'swiper/css/navigation'
 
 import Image from 'next/image'
 import { StarRating } from '@/components/atoms'
+import ReviewBox from './ReviewBox'
 
+const datas = [
+  {
+    initialName: 'H',
+    name: 'Hamam',
+    rating: 5,
+    dateTime: '5 months ago',
+    reviews:
+      'Very friendly helpful and clear about ur perpective.Efficient and fast response to the queries related to the...'
+  },
+  {
+    initialName: 'Y',
+    name: 'Yazid',
+    rating: 4,
+    dateTime: '2 months ago',
+    reviews: 'Fast response'
+  },
+  {
+    initialName: 'A',
+    name: 'Yazi Akbar',
+    rating: 5,
+    dateTime: '1 weeks ago',
+    reviews:
+      'Very smooth process. Thank you for the efficiency and fast process'
+  }
+]
 const Reviews = () => {
   return (
     <div className="flex  w-full h-full mx-auto bg-gray-100 items-center py-8 justify-center">
@@ -31,24 +57,13 @@ const Reviews = () => {
             scrollbar={{ draggable: true }}
             autoplay={true}
           >
-            <SwiperSlide>
-              <ReviewBox />
-            </SwiperSlide>
-            <SwiperSlide>
-              <ReviewBox />
-            </SwiperSlide>
-            <SwiperSlide>
-              <ReviewBox />
-            </SwiperSlide>
-            <SwiperSlide>
-              <ReviewBox />
-            </SwiperSlide>
-            <SwiperSlide>
-              <ReviewBox />
-            </SwiperSlide>
-            <SwiperSlide>
-              <ReviewBox />
-            </SwiperSlide>
+            {datas.map((item) => {
+              return (
+                <SwiperSlide key={item.name}>
+                  <ReviewBox {...item} />
+                </SwiperSlide>
+              )
+            })}
           </Swiper>
         </div>
       </div>
@@ -58,34 +73,3 @@ const Reviews = () => {
 
 export default Reviews
 
-const ReviewBox = () => {
-  return (
-    <div className="shadow-xl rounded-lg p-4 justify-center items-center outline-1 bg-white">
-      <div className="flex w-full">
-        <div className="flex h-[48px] w-[48px] bg-red-400 rounded-full justify-center items-center">
-          <h1 className="text-center justify-center items-center text-[18px] font-bold text-white">
-            H
-          </h1>
-        </div>
-        <div className="flex flex-col gap-0justify-center ml-2">
-          <p className="w-full font-bold">Jad rawkz</p>
-          <div className="flex items-center gap-2">
-            <StarRating num={5} />
-            <p className="text-sm">5 months ago</p>
-          </div>
-        </div>
-      </div>
-      <p className="text-sm mt-2 h-[100px]">
-        Extremely helpful and great patience by Wani, as it was my first time
-        getting a loan, she guided me throughout the ...
-      </p>
-      <div className="flex gap-2">
-        <Image src={require('/public/assets/icons/google.svg')} alt="google" />
-        <div className="gap-1">
-          <p className="text-sm">Posted on </p>
-          <p className="text-sm text-[blue] mt-[-4px]">Google</p>
-        </div>
-      </div>
-    </div>
-  )
-}
