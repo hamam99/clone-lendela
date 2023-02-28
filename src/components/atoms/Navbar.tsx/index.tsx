@@ -7,7 +7,9 @@ const Navbar = () => {
   return (
     <div className="fixed w-full h-30 shadow-xl z-[100] ease-in-out duration-300 py-2">
       <div className="flex flex-row justify-center items-center w-full h-full px-2 2xl:px-16">
-        <Image src={Icon} alt={'/'} height={32} />
+        <Link href={'/'}>
+          <Image src={Icon} alt={'/'} height={32} />
+        </Link>
         <div>
           <ul className="flex flex-row justify-center items-center">
             <Link
