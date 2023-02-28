@@ -10,7 +10,7 @@ import Link from 'next/link'
 
 const FaqLoans = () => {
   return (
-    <div className="flex flex-col w-full h-full py-8 items-center justify-center">
+    <div className="flex flex-col w-full h-full pt-8 mb-16 items-center justify-center">
       <div className="flex flex-col max-w-[1024px]">
         <div className="flex flex-col text-center items-center justify-center">
           <h1 className="font-bold text-3xl">
@@ -25,7 +25,7 @@ const FaqLoans = () => {
           </p>
         </div>
         <div
-          className="w-full grid grid-cols-5 gap-0 items-start mt-16 "
+          className="w-full grid grid-cols-5 gap-0 items-start mt-16"
           //
         >
           <div className="col-span-1">
@@ -74,10 +74,7 @@ const FaqLoans = () => {
               <p className="text-white font-bold text-lg">COMPARE NOW</p>
             </button>
           </div>
-          <div
-            className="col-span-4 ml-6 max-h-[550px] overflow-y-scroll scrollbar-hide"
-            style={{ scrollbarWidth: 'none' }}
-          >
+          <div className="col-span-4 ml-6 max-h-[700px] overflow-y-scroll scrollbar-hide ">
             <div className="w-full border border-1 p-6" id="personal-loan">
               <Image src={icWallet} height={64} alt="icon" />
               <h1 className="font-bold text-xl py-2">
@@ -181,7 +178,7 @@ const FaqLoans = () => {
               </p>
             </div>
 
-            <div className="w-full border border-1 p-6" id="student-loan">
+            <div className="w-full border border-1 p-6  mt-8" id="student-loan">
               <Image src={icChartBoard} height={64} alt="icon" />
               <h1 className="font-bold text-xl py-2">Student Loan</h1>
               <div className="h-[1px] bg-slate-300" />
@@ -238,7 +235,7 @@ const FaqLoans = () => {
               </p>
             </div>
 
-            <div className="w-full border border-1 p-6" id="cash-loan">
+            <div className="w-full border border-1 p-6  mt-8" id="cash-loan">
               <Image src={icThrophy} height={64} alt="icon" />
               <h1 className="font-bold text-xl py-2">Cash Loan</h1>
               <div className="h-[1px] bg-slate-300" />
@@ -294,7 +291,10 @@ const FaqLoans = () => {
               </p>
             </div>
 
-            <div className="w-full border border-1 p-6" id="renovation-loan">
+            <div
+              className="w-full border border-1 p-6  mt-8"
+              id="renovation-loan"
+            >
               <Image src={icTarget} height={64} alt="icon" />
               <h1 className="font-bold text-xl py-2">Renovation Loan</h1>
               <div className="h-[1px] bg-slate-300" />
@@ -354,7 +354,7 @@ const FaqLoans = () => {
               </p>
             </div>
 
-            <div className="w-full border border-1 p-6" id="car-loan">
+            <div className="w-full border border-1 p-6  mt-8" id="car-loan">
               <Image src={icKey} height={64} alt="icon" />
               <h1 className="font-bold text-xl py-2">Car Loan</h1>
               <div className="h-[1px] bg-slate-300" />
@@ -408,7 +408,7 @@ const FaqLoans = () => {
               </p>
             </div>
 
-            <div className="w-full border border-1 p-6" id="wedding-loan">
+            <div className="w-full border border-1 p-6  mt-8" id="wedding-loan">
               <Image src={icThrophy} height={64} alt="icon" />
               <h1 className="font-bold text-xl py-2">Wedding Loan</h1>
               <div className="h-[1px] bg-slate-300" />
@@ -466,7 +466,10 @@ const FaqLoans = () => {
               </p>
             </div>
 
-            <div className="w-full border border-1 p-6" id="lendela-help">
+            <div
+              className="w-full border border-1 p-6  mt-8 mb-8"
+              id="lendela-help"
+            >
               <Image src={icTarget} height={64} alt="icon" />
               <h1 className="font-bold text-xl py-2">
                 How does Lendela help you find the best personal loan in
