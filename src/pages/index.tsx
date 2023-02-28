@@ -4,6 +4,7 @@ import { Navbar, SelectedPartners } from '@/components/atoms'
 import {
   About,
   CompareLoans,
+  FaqLoans,
   Reviews,
   StepsPersonalLoan
 } from '@/components/molecules'
@@ -29,6 +30,7 @@ export default function Home() {
       <Reviews />
       <StepsPersonalLoan />
       <About />
+      <FaqLoans />
     </>
   )
 }
