@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
-import { Navbar } from '@/components/atoms'
+import { Navbar, SelectedPartners } from '@/components/atoms'
 import { CompareLoans } from '@/components/molecules'
 // import { Navbar } from './Components/atoms'
 // import CompareLoans from './Components/molecules/CompareLoans'
@@ -17,8 +17,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <div className="flex w-full h-full pt-[60px]" style={{}}>
+      <div
+        className="flex flex-col w-full h-full pt-[60px] max-w-[1024px] mx-auto"
+        style={{}}
+      >
         <CompareLoans />
+        <SelectedPartners />
       </div>
     </>
   )
