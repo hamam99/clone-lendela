@@ -1,7 +1,11 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import { Navbar, SelectedPartners } from '@/components/atoms'
-import { CompareLoans, Reviews } from '@/components/molecules'
+import {
+  CompareLoans,
+  Reviews,
+  StepsPersonalLoan
+} from '@/components/molecules'
 // import { Navbar } from './Components/atoms'
 // import CompareLoans from './Components/molecules/CompareLoans'
 
@@ -22,6 +26,7 @@ export default function Home() {
         <SelectedPartners />
       </div>
       <Reviews />
+      <StepsPersonalLoan />
     </>
   )
 }
