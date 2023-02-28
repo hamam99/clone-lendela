@@ -58,7 +58,7 @@ const FaqLoans = () => {
             </button>
           </div>
           <div
-            className="col-span-4 ml-6 max-h-[600px] overflow-y-scroll "
+            className="col-span-4 ml-6 max-h-[550px] overflow-y-scroll "
             style={{ scrollbarWidth: 'none' }}
           >
             <div className="w-full border border-1 p-6" id="personal-loan">
