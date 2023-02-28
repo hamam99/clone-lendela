@@ -41,7 +41,7 @@ const listPartners = [
 
 const SelectedPartners = () => {
   return (
-    <div className="mt-10 mx-auto items-center justify-center">
+    <div className="py-10 mx-auto items-center justify-center">
       <p className="text-center py-6">SELECTED PARTNERS</p>
       <div className="flex flex-row gap-6">
         {listPartners.map((item) => {
