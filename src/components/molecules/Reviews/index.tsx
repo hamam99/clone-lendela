@@ -6,8 +6,8 @@ import { Navigation } from 'swiper'
 import 'swiper/css'
 import 'swiper/css/navigation'
 
-import { AiFillStar } from 'react-icons/ai'
 import Image from 'next/image'
+import { StarRating } from '@/components/atoms'
 
 const Reviews = () => {
   return (
@@ -88,12 +88,4 @@ const ReviewBox = () => {
       </div>
     </div>
   )
-}
-
-const StarRating = ({ num }: { num: number }) => {
-  let data = []
-  for (let i = 0; i < num; i++) {
-    data.push(<AiFillStar style={{ color: '#FF9529' }} size={18} />)
-  }
-  return <div className="flex w-fit">{data}</div>
 }
