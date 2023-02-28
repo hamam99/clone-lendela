@@ -6,6 +6,7 @@ import icChartBoard from '/public/assets/icons/chart-board.svg'
 import icThrophy from '/public/assets/icons/trophy.svg'
 import icTarget from '/public/assets/icons/target.svg'
 import icKey from '/public/assets/icons/key.svg'
+import Link from 'next/link'
 
 const FaqLoans = () => {
   return (
@@ -28,31 +29,47 @@ const FaqLoans = () => {
           //
         >
           <div className="col-span-1">
-            <h3 className="py-3 font-bold text-green-500 border-b-2">
-              What is a personal loan?
-            </h3>
-            <h3 className="py-3 font-bold text-green-500 border-b-2">
-              Debt Consolidation
-            </h3>
-            <h3 className="py-3 font-bold text-green-500  border-b-2">
-              Student Loan
-            </h3>
-            <h3 className="py-3 font-bold text-green-500  border-b-2">
-              Cash Loan
-            </h3>
-            <h3 className="py-3 font-bold text-green-500  border-b-2">
-              Renovation Loan
-            </h3>
-            <h3 className="py-3 font-bold text-green-500  border-b-2">
-              Car Loan
-            </h3>
-            <h3 className="py-3 font-bold text-green-500  border-b-2">
-              Wedding Loan
-            </h3>
-            <h3 className="py-3 font-bold text-green-500  border-b-2">
-              How does Lendela help you find the best personal loan in
-              Singapore?
-            </h3>
+            <Link href={'/#personal-loan'} scroll={false}>
+              <h3 className="py-3 font-bold text-green-500 border-b-2">
+                What is a personal loan?
+              </h3>
+            </Link>
+            <Link href={'/#debt-consolidation'} scroll={false}>
+              <h3 className="py-3 font-bold text-green-500 border-b-2">
+                Debt Consolidation
+              </h3>
+            </Link>
+            <Link href={'/#student-loan'} scroll={false}>
+              <h3 className="py-3 font-bold text-green-500  border-b-2">
+                Student Loan
+              </h3>
+            </Link>
+            <Link href={'/#cash-loan'} scroll={false}>
+              <h3 className="py-3 font-bold text-green-500  border-b-2">
+                Cash Loan
+              </h3>
+            </Link>
+            <Link href={'/#renovation-loan'} scroll={false}>
+              <h3 className="py-3 font-bold text-green-500  border-b-2">
+                Renovation Loan
+              </h3>
+            </Link>
+            <Link href={'/#car-loan'} scroll={false}>
+              <h3 className="py-3 font-bold text-green-500  border-b-2">
+                Car Loan
+              </h3>
+            </Link>
+            <Link href={'/#wedding-loan'} scroll={false}>
+              <h3 className="py-3 font-bold text-green-500  border-b-2">
+                Wedding Loan
+              </h3>
+            </Link>
+            <Link href={'/#lendela-help'} scroll={false}>
+              <h3 className="py-3 font-bold text-green-500  border-b-2">
+                How does Lendela help you find the best personal loan in
+                Singapore?
+              </h3>
+            </Link>
             <button className="w-full h-[48px] rounded-lg bg-green-500 mt-4">
               <p className="text-white font-bold text-lg">COMPARE NOW</p>
             </button>
