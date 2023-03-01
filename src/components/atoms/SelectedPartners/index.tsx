@@ -7,6 +7,7 @@ import imgUob from '/public/assets/icons/uob.webp'
 import imgCity from '/public/assets/icons/citibanklogo.webp'
 import imgSingPass from '/public/assets/icons/singpass-v2.webp'
 import Image from 'next/image'
+import clsx from 'clsx'
 
 const listPartners = [
   {
@@ -39,10 +40,12 @@ const listPartners = [
   }
 ]
 
-const SelectedPartners = () => {
+const SelectedPartners = ({ hideTitle = false }) => {
   return (
     <div className="py-10 mx-auto items-center justify-center">
-      <p className="text-center py-6">SELECTED PARTNERS</p>
+      <p className={clsx('text-center py-6', hideTitle ? 'hidden' : '')}>
+        SELECTED PARTNERS
+      </p>
       <div className="flex flex-row gap-6">
         {listPartners.map((item) => {
           return (
