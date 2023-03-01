@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
-import { Navbar, SelectedPartners } from '@/components/atoms'
+import { Footer, Navbar, SelectedPartners } from '@/components/atoms'
 import {
   About,
   CompareLoans,
@@ -31,6 +31,7 @@ export default function Home() {
       <StepsPersonalLoan />
       <About />
       <FaqLoans />
+      <Footer />
     </>
   )
 }
