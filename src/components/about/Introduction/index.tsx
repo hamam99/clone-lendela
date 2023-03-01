@@ -3,7 +3,7 @@ import React from 'react'
 
 import ImgAboutHeader from '/public/assets/images/about-header.png'
 
-const AboutHeader = () => {
+const Introduction = () => {
   return (
     <div className="flex w-full justify-center py-4">
       <div className="max-w-[1024px] flex flex-col justify-center ">
@@ -39,4 +39,4 @@ const AboutHeader = () => {
   )
 }
 
-export default AboutHeader
+export default Introduction
