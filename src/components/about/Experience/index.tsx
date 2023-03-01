@@ -1,9 +1,10 @@
 import Image from 'next/image'
 import React from 'react'
+import bg from '/public/assets/images/top-wave.svg'
 
 const Experience = () => {
   return (
-    <div className="flex w-full justify-center py-4 bg-green-400">
+    <div className="flex w-full justify-center py-4 ">
       <div className="max-w-[1024px] flex flex-col w-full items-center justify-center">
         <div className="grid grid-cols-2 w-full gap-1">
           <div className="col-span-1 w-full flex flex-col mr-8">

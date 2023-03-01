@@ -16,12 +16,15 @@ const About = () => {
       <div className="pt-[60px]" />
       <Introduction />
       <LicensedPartners />
-      <Divider />
-      <Singpass />
-      <Divider />
-      <Reviews />
-      <Divider />
-      <BillboardAds />
+      <div className="bg-[#f8f8f8f8]">
+        <Divider />
+        <Singpass />
+        <Divider />
+        <Reviews />
+        <Divider />
+        <BillboardAds />
+      </div>
+
       <Experience />
       <Footer />
     </div>
@@ -32,8 +35,8 @@ export default About
 
 const Divider = () => {
   return (
-    <div className="flex w-full justify-center my-16">
-      <div className="h-[1px] bg-gray-300 w-[1600px] flex self-center" />
+    <div className="flex w-full justify-center py-16">
+      <div className="h-[1px] bg-gray-200 w-[1600px] flex self-center" />
     </div>
   )
 }

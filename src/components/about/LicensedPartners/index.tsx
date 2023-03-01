@@ -1,10 +1,16 @@
 import { SelectedPartners } from '@/components/atoms'
 import React from 'react'
+import bg from '/public/assets/images/top-wave.svg'
 
 const LicensedPartners = () => {
   return (
-    <div className="flex w-full justify-center py-4">
-      <div className="flex flex-col justify-center items-center max-w-[1024px]">
+    <div
+      className="flex w-full justify-center py-4 bg-local bg-no-repeat bg-cover"
+      style={{
+        backgroundImage: `url(${bg.src})`
+      }}
+    >
+      <div className="flex flex-col justify-center items-center max-w-[1024px] ">
         <h1 className="font-bold text-2xl border-b-2 border-green-700 py-4">
           WHY TRUST US?
         </h1>
