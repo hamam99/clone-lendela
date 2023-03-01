@@ -1,4 +1,5 @@
 import {
+  BillboardAds,
   Introduction,
   LicensedPartners,
   Reviews,
@@ -18,6 +19,8 @@ const About = () => {
       <Singpass />
       <Divider />
       <Reviews />
+      <Divider />
+      <BillboardAds />
       <Footer />
     </div>
   )

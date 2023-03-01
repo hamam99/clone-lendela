@@ -31,6 +31,13 @@ const listReviews = [
   }
 ]
 
-const MockData = { listReviews }
+const listBillboardAds = [
+  'https://sg.lendela.com/assets/img/sg-mrt.jpeg',
+  'https://sg.lendela.com/assets/img/sg-moneyfm.jpeg',
+  'https://sg.lendela.com/assets/img/sg-bus.jpeg',
+  'https://sg.lendela.com/assets/img/sg-car.jpeg',
+  'https://sg.lendela.com/assets/img/sg-busstop.jpeg'
+]
+const MockData = { listReviews, listBillboardAds }
 
 export default MockData
