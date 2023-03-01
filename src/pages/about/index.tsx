@@ -1,4 +1,9 @@
-import { Introduction, LicensedPartners, Reviews } from '@/components/about'
+import {
+  Introduction,
+  LicensedPartners,
+  Reviews,
+  Singpass
+} from '@/components/about'
 import { Footer, Navbar } from '@/components/atoms'
 import React from 'react'
 
@@ -9,6 +14,8 @@ const About = () => {
       <div className="pt-[60px]" />
       <Introduction />
       <LicensedPartners />
+      <Divider />
+      <Singpass />
       <Divider />
       <Reviews />
       <Footer />
