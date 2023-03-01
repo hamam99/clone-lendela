@@ -3,7 +3,7 @@ import React from 'react'
 
 const LicensedPartners = () => {
   return (
-    <div className="flex w-full justify-center py-4 bg-[white]">
+    <div className="flex w-full justify-center py-4">
       <div className="flex flex-col justify-center items-center max-w-[1024px]">
         <h1 className="font-bold text-2xl border-b-2 border-green-700 py-4">
           WHY TRUST US?

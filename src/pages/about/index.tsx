@@ -1,4 +1,4 @@
-import { Introduction, LicensedPartners } from '@/components/about'
+import { Introduction, LicensedPartners, Reviews } from '@/components/about'
 import { Footer, Navbar } from '@/components/atoms'
 import React from 'react'
 
@@ -10,6 +10,7 @@ const About = () => {
       <Introduction />
       <LicensedPartners />
       <Divider />
+      <Reviews />
       <Footer />
     </div>
   )

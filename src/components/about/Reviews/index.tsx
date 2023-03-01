@@ -4,23 +4,21 @@ import { Navigation } from 'swiper'
 // Import Swiper styles
 import 'swiper/css'
 import 'swiper/css/navigation'
-
-import Image from 'next/image'
-import { StarRating } from '@/components/atoms'
-import ReviewBox from './ReviewBox'
 import MockData from '@/MockData'
+import ReviewBox from '@/components/molecules/Reviews/ReviewBox'
 
 const Reviews = () => {
   return (
-    <div className="flex  w-full h-full mx-auto bg-gray-100 items-center py-8 justify-center">
-      <div className="max-w-[1024px] items-center justify-center">
-        <h1 className="font-bold text-[30px] text-center">
-          50,000 loan application yearly
+    <div className="flex w-full justify-center py-4">
+      <div className="max-w-[1024px]">
+        <h1 className="font-bold text-2xl  text-center">
+          We process <span className="text-green-500">50,000</span> loan
+          applications yearly
         </h1>
-        <p className="text-center">
-          Find out what our great customers have to say about Lendela.
+        <p className="my-4  text-center">
+          Our customers give Lendela a 5/5 ⭐️ rating on Google.
         </p>
-        <div className="py-6">
+        <div className="py-6 ">
           <Swiper
             spaceBetween={50}
             slidesPerView={3}
@@ -47,4 +45,3 @@ const Reviews = () => {
 }
 
 export default Reviews
-
