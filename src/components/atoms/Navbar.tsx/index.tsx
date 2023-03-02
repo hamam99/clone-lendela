@@ -13,7 +13,7 @@ const Navbar = () => {
         <div>
           <ul className="flex flex-row justify-center items-center">
             <Link
-              href="/#home"
+              href="/about"
               className="ml-10 text-sm hover:border-b"
               scroll={false}
             >
