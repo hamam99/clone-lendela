@@ -23,6 +23,7 @@ const About = () => {
         <Reviews />
         <Divider />
         <BillboardAds />
+        <Divider />
         <Experience />
       </div>
 
