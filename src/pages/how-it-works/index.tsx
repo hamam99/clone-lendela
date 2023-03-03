@@ -1,4 +1,4 @@
-import { Navbar } from '@/components/atoms'
+import { Footer, Navbar } from '@/components/atoms'
 import { ContactUs, Promise, Steps } from '@/components/HowItWorks'
 import React from 'react'
 
@@ -10,6 +10,7 @@ const HowItWorks = () => {
         <Steps />
         <Promise />
         <ContactUs />
+        <Footer />
       </div>
     </div>
   )
