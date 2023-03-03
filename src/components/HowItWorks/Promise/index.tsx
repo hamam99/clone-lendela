@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 import imgHowIt1 from '/public/assets/icons/how-it-works-1.webp'
 import imgHowIt2 from '/public/assets/icons/how-it-works-2.webp'
@@ -24,9 +25,11 @@ const Promise = () => {
             )
           })}
         </div>
-        <button className="rounded border-2 border-white py-2 px-16 text-white font-bold mt-10">
-          MORE ABOUT US
-        </button>
+        <Link href={'/about'}>
+          <button className="rounded border-2 border-white py-2 px-16 text-white font-bold mt-10">
+            MORE ABOUT US
+          </button>
+        </Link>
       </div>
     </div>
   )
