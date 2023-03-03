@@ -1,5 +1,5 @@
 import { Navbar } from '@/components/atoms'
-import { Promise, Steps } from '@/components/HowItWorks'
+import { ContactUs, Promise, Steps } from '@/components/HowItWorks'
 import React from 'react'
 
 const HowItWorks = () => {
@@ -9,6 +9,7 @@ const HowItWorks = () => {
       <div className=" flex flex-col w-full justify-center items-center pt-[60px] mx-auto">
         <Steps />
         <Promise />
+        <ContactUs />
       </div>
     </div>
   )
