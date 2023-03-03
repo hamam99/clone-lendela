@@ -20,14 +20,14 @@ const Navbar = () => {
               <p className="font-bold text-[#707070]">About Us</p>
             </Link>
             <Link
-              href="/#home"
+              href="/how-it-works"
               className="ml-10 text-sm hover:border-b"
               scroll={false}
             >
               <p className="font-bold text-[#707070]">How it works</p>
             </Link>
             <Link
-              href="/#home"
+              href="/faq"
               className="ml-10 text-sm hover:border-b"
               scroll={false}
             >

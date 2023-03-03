@@ -1,4 +1,4 @@
-import { SelectedPartners } from '@/components/atoms'
+import { SelectedPartners } from '@/components/atoms' 
 import React from 'react'
 import bg from '/public/assets/images/top-wave.svg'
 
