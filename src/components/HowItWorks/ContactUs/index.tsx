@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 import imgTeam2 from '/public/assets/images/team-2.webp'
 const ContactUs = () => {
@@ -15,9 +16,14 @@ const ContactUs = () => {
               the entire process, to guide you and answer any questions.
             </p>
             <p className="mt-14">Any questions?</p>
-            <button className="rounded border-2 border-green-500 w-full py-2 font-bold text-green-500 mt-3">
-              CONTACT US
-            </button>
+            <Link href={'/contact'}>
+              <button
+                className="rounded border-2 border-green-500 w-full py-2 font-bold text-green-500 mt-3 
+            hover:bg-green-500 hover:text-white"
+              >
+                CONTACT US
+              </button>
+            </Link>
           </div>
           <div className="col-span-1 ">
             <Image src={imgTeam2} alt="team" />
