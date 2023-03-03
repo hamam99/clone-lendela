@@ -1,3 +1,7 @@
+import imgStep1 from '/public/assets/images/step1.webp'
+import imgStep2 from '/public/assets/images/step2.webp'
+import imgStep3 from '/public/assets/images/step3.webp'
+
 const listReviews = [
   {
     initialName: 'H',
@@ -38,6 +42,26 @@ const listBillboardAds = [
   'https://sg.lendela.com/assets/img/sg-car.jpeg',
   'https://sg.lendela.com/assets/img/sg-busstop.jpeg'
 ]
-const MockData = { listReviews, listBillboardAds }
+
+const listStepWorks = [
+  {
+    title: 'Applu securely with Singpass',
+    desciption:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptates ipsa voluptatibus fugiat laboriosam vitae optio officiis magni, nemo aperiam temporibus voluptatum atque distinctio iure eaque ad aliquid impedit aut?',
+    image: imgStep1
+  },
+  {
+    title: 'Compare tailored loan offers',
+    desciption:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptates ipsa voluptatibus fugiat laboriosam vitae optio officiis magni, nemo aperiam temporibus voluptatum atque distinctio iure eaque ad aliquid impedit aut?',
+    image: imgStep2
+  },
+  {
+    title: 'Get your money',
+    desciption: 'Lorem ipsum dolor sit amet.',
+    image: imgStep3
+  }
+]
+const MockData = { listReviews, listBillboardAds, listStepWorks }
 
 export default MockData

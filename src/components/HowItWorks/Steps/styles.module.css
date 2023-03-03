@@ -1,0 +1,14 @@
+#swiper-color .swiper-button-next {
+  color: red;
+}
+
+.swiper-button-next {
+  background-image: url(./next.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+
+.swiper-button-next::after {
+  display: none;
+}
