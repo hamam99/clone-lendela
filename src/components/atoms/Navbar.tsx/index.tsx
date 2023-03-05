@@ -34,7 +34,7 @@ const Navbar = () => {
               <p className="font-bold text-[#707070]">FAQ</p>
             </Link>
             <Link
-              href="/#home"
+              href="/contact"
               className="ml-10 text-sm hover:border-b"
               scroll={false}
             >
