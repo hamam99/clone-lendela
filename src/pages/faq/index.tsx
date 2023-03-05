@@ -33,6 +33,7 @@ const Faq = () => {
                 return (
                   <button
                     key={index}
+
                     className="font-bold text-green-500 h-[75px] w-[230px] bg-[#f8f8f8] rounded-lg shadow-lg hover:border-2 hover:border-green-500"
                   >
                     {item}
