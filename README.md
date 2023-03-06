@@ -41,10 +41,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## Screenshot
 <img src="./screenshots/home.png"  width="300">
+<img src="./screenshots/about-us.png"  width="300">
+<img src="./screenshots/faq.png"  width="300">
+<img src="./screenshots/how-it-works.png"  width="300">
+<img src="./screenshots/login-popup.png"  width="300">
 
-![image info](./screenshots/home.png)
-![image info](./screenshots/about-us.png)
-![image info](./screenshots/faq.png)
-![image info](./screenshots/home.png)
-![image info](./screenshots/how-it-works.png)
-![image info](./screenshots/login-popup.png)
