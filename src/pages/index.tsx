@@ -8,12 +8,18 @@ import {
   Reviews,
   StepsPersonalLoan
 } from '@/components/molecules'
+import { Modal, TextField, Typography } from '@mui/material'
+import { useEffect, useState } from 'react'
+import { Box } from '@mui/system'
+import { useLoginStore } from '@/store'
 // import { Navbar } from './Components/atoms'
 // import CompareLoans from './Components/molecules/CompareLoans'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const { showLoginForm, setShowLoginForm } = useLoginStore((state) => state)
+
   return (
     <>
       <Head>
@@ -31,6 +37,45 @@ export default function Home() {
       <StepsPersonalLoan />
       <About />
       <FaqLoans />
+      <Modal
+        open={showLoginForm}
+        onClose={() => {
+          // setLoginModal(false)
+          setShowLoginForm(false)
+        }}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+        className="flex items-center justify-center"
+        // style={{
+        //   display: 'flex',
+        //   justifyContent: 'center',
+        //   alignItems: 'center',
+        //   margin: 'auto'
+        // }}
+      >
+        <Box
+          sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            backgroundColor: 'white',
+            width: '400px',
+            height: '300px',
+            borderRadius: '10px',
+            padding: '24px',
+            justifyContent: 'center'
+            // alignItems: 'center'
+          }}
+        >
+          <h1 className="font-bold text-3xl">WELCOME BACK</h1>
+          <p className="text-gray-400 mb-10">
+            Log in to your account to check your latest loan offers.
+          </p>
+          <TextField label="Email" variant="standard" color="success" />
+          <button className="bg-green-500 rounded-lg w-[120px] text-center text-white font-bold text-xl py-3 mx-auto mt-8 hover:bg-green-400">
+            NEXT
+          </button>
+        </Box>
+      </Modal>
       <Footer />
     </>
   )
