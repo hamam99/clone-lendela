@@ -39,10 +39,17 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
+##Official URL 
+- https://sg.lendela.com/
+
+##Tech Stack
+- NextJS
+- TailwindCSS
 ## Screenshot
 <img src="./screenshots/home.png"  width="300">
 <img src="./screenshots/login-popup.png"  width="300">
 <img src="./screenshots/about-us.png"  width="300">
 <img src="./screenshots/faq.png"  width="300">
 <img src="./screenshots/how-it-works.png"  width="300">
+
 
