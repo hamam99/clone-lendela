@@ -40,7 +40,7 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 ## Screenshot
-![image info](./screenshots/home.png) {width=250}
+![image info](./screenshots/home.png){width=100}
 ![image info](./screenshots/about-us.png)
 ![image info](./screenshots/faq.png)
 ![image info](./screenshots/home.png)
